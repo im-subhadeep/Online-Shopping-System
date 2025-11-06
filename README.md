@@ -42,6 +42,7 @@ Even when rapid prototyping, we document the standard SDLC activities behind GoC
 - **Styling:** Tailwind CSS
 - **UI Components:** Lucide React for icons
 - **State Management:** Redux Toolkit
+- **Database:** MySQL (via Prisma ORM)
 
 ## 🚀 Getting Started <a name="-getting-started"></a>
 
@@ -80,12 +81,3 @@ We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) fo
 ## 📜 License <a name="-license"></a>
 
 This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
