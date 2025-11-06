@@ -1,14 +1,6 @@
 <div align="center">
   <h1><img src="https://gocartshop.in/favicon.ico" width="20" height="20" alt="GoCart Favicon">
    GoCart</h1>
-  <p>
-    An open-source multi-vendor e-commerce platform built with Next.js and Tailwind CSS.
-  </p>
-  <p>
-    <a href="https://github.com/GreatStackDev/goCart/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/GreatStackDev/goCart?style=for-the-badge" alt="License"></a>
-    <a href="https://github.com/GreatStackDev/goCart/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
-    <a href="https://github.com/GreatStackDev/goCart/issues"><img src="https://img.shields.io/github/issues/GreatStackDev/goCart?style=for-the-badge" alt="GitHub issues"></a>
-  </p>
 </div>
 
 ---
@@ -16,6 +8,7 @@
 ## 📖 Table of Contents
 
 - [✨ Features](#-features)
+- [🛠️ SDLC Approach](#-sdlc-approach)
 - [🛠️ Tech Stack](#-tech-stack)
 - [🚀 Getting Started](#-getting-started)
 - [🤝 Contributing](#-contributing)
@@ -29,6 +22,19 @@
 - **Customer-Facing Storefront:** A beautiful and responsive user interface for customers to browse and purchase products.
 - **Vendor Dashboards:** Dedicated dashboards for vendors to manage products, view sales analytics, and track orders.
 - **Admin Panel:** A comprehensive dashboard for platform administrators to oversee vendors, products, and commissions.
+
+## 🛠️ SDLC Approach <a name="-sdlc-approach"></a>
+
+Even when rapid prototyping, we document the standard SDLC activities behind GoCart so contributors can inherit a disciplined delivery process:
+
+- **Requirements & Vision:** Captured marketplace personas (platform admin, vendor, shopper) and framed each capability as user stories with acceptance criteria so requirements stay traceable through delivery.
+- **Planning & Estimation:** Broke stories into a Work Breakdown Structure, sized them via story points, and validated effort using the intermediate COCOMO model (organic mode) to keep the release plan aligned with capacity.
+- **Analysis & Modeling:** Produced an Entity Relationship Diagram covering vendors, products, inventory, orders, customers, and payments, alongside Level 0/1 Data Flow Diagrams that illustrate browsing, checkout, fulfillment, and refund pathways. These artefacts live in `docs/architecture`.
+- **Design Decisions:** Logged architecture decisions (ADRs) around Next.js routing, Prisma data access, caching, and security boundaries. Sequence diagrams show request flow from the storefront to Prisma and external services, while UI wireframes document responsive layouts.
+- **Implementation Standards:** Applied lint/format checks, TypeScript strict mode, commit conventions, and pull-request templates that reference the originating user story or ADR to keep code reviews focused on the intended scope.
+- **Verification & Validation:** Combined Jest unit tests, React Testing Library component tests, Playwright end-to-end flows, and Thunder Client API collections. Static analysis (ESLint) and `next lint` run automatically in CI alongside Prisma schema validation.
+- **Deployment & Operations:** Prepared environment configuration matrices, migration runbooks (Prisma Migrate), health check monitors, and rollback steps. CI/CD pipelines gate promotion on test suites and enforce semantic version tagging.
+- **Continuous Improvement:** Sprint reviews compare actual velocity against COCOMO estimates, and retrospectives capture lessons to refine estimation and risk mitigation in future iterations.
 
 ## 🛠️ Tech Stack <a name="-tech-stack"></a>
 
