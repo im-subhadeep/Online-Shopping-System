@@ -10,8 +10,8 @@
 - [✨ Features](#-features)
 - [🛠️ SDLC Approach](#-sdlc-approach)
 - [🛠️ Tech Stack](#-tech-stack)
+- [🛠️ ER Diagram](#-er-diagram)
 - [🚀 Getting Started](#-getting-started)
-- [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 
 ---
@@ -44,6 +44,18 @@ Even when rapid prototyping, we document the standard SDLC activities behind GoC
 - **State Management:** Redux Toolkit
 - **Database:** MySQL (via Prisma ORM)
 
+
+---
+
+## 🛠️ ER Diagram <a name="-er-diagram"></a>
+
+
+![alt text](assets/er_diagram.svg)
+
+
+---
+
+
 ## 🚀 Getting Started <a name="-getting-started"></a>
 
 First, install the dependencies. We recommend using `npm` for this project.
@@ -70,13 +82,7 @@ You can start editing the page by modifying `app/(public)/page.js`. The page aut
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Outfit](https://vercel.com/font), a new font family for Vercel.
 
----
 
-## 🤝 Contributing <a name="-contributing"></a>
-
-We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for more details on how to get started.
-
----
 
 ## 📜 License <a name="-license"></a>
 
