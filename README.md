@@ -242,4 +242,5 @@ npm run dev
 
 The server should now be running on `http://localhost:5000` with a successful connection to the MySQL database.
 
+## License <a name="-license"></a>
 This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
