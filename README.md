@@ -84,11 +84,7 @@ Here is a diagram to visualize this process in your document:
 ---
 
 ## Unified Modeling Language (UML) Design <a name="-uml-design"></a>
-Here is the professional Markdown content for your **UML Design** section. You simply need to paste your generated images where indicated.
 
----
-
-## Unified Modeling Language (UML) Design
 
 To visualize the system architecture and interactions, the following UML diagrams were designed to represent the functional requirements, static structure, and dynamic behavior of the E-commerce platform.
 
