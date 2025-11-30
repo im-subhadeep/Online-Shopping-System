@@ -185,32 +185,61 @@ The project was successfully completed in **1 Month**, effectively compressing t
 
 ## Getting Started <a name="-getting-started"></a>
 
-First, install the dependencies. We recommend using `npm` for this project.
+Follow these steps to set up and run the project locally.
+
+### Prerequisites
+
+  * **Node.js** (v14 or higher)
+  * **MySQL Server** (v8.0 or higher)
+  * **npm** (Node Package Manager)
+
+### Installation Steps
+
+**1. Clone the Repository**
 
 ```bash
+git clone https://github.com/your-username/ecommerce-project.git
+cd ecommerce-project
+```
+
+**2. Install Dependencies**
+Navigate to the server directory and install the required packages.
+
+```bash
+cd server
 npm install
 ```
 
-Then, run the development server:
+**3. Database Setup**
+
+  * Open your MySQL Workbench or Command Line.
+  * Create a new database named `ecommerce_db`.
+  * Import the provided SQL schema file located at `server/database.sql` to generate the necessary tables and relationships.
+
+**4. Configuration**
+Create a `.env` file in the `server` directory and configure your environment variables:
+
+```env
+PORT=5000
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=ecommerce_db
+JWT_SECRET=your_secret_key
+PAYPAL_CLIENT_ID=your_paypal_id
+PAYPAL_CLIENT_SECRET=your_paypal_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+```
+
+**5. Run the Server**
+Start the backend server in development mode.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/(public)/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Outfit](https://vercel.com/font), a new font family for Vercel.
-
-
-
-## License <a name="-license"></a>
+The server should now be running on `http://localhost:5000` with a successful connection to the MySQL database.
 
 This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
